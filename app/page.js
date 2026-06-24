@@ -305,7 +305,7 @@ Quiero recibir una propuesta para mi proyecto.`;
     delay: 0.8,
     ease: "easeOut",
   }}
-  className="absolute bottom-48 left-6 right-6 md:top-[32%] md:left-auto md:right-[8%] md:bottom-auto z-50 flex flex-row justify-center md:justify-start gap-3"
+  className="absolute bottom-56 left-6 right-6 md:top-[32%] md:left-auto md:right-[8%] md:bottom-auto z-50 flex flex-row justify-center md:justify-start gap-3"
 >
     {[
       ["120+", "PROYECTOS"],
@@ -1019,43 +1019,43 @@ transition={{
       <img
         src="/logos/logo1.png"
         alt="Logo 1"
-        className="h-24 md:h-32 opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+        className="h-32 md:h-44 w-auto object-contain opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
       />
 
       <img
         src="/logos/logo2.png"
         alt="Logo 2"
-        className="h-24 md:h-32 opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+        className="h-32 md:h-44 w-auto object-contain opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
       />
 
       <img
         src="/logos/logo3.png"
         alt="Logo 3"
-        className="h-24 md:h-32 opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+        className="h-32 md:h-44 w-auto object-contain opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
       />
 
       <img
         src="/logos/logo4.png"
         alt="Logo 4"
-        className="h-24 md:h-32 opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+        className="h-32 md:h-44 w-auto object-contain opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
       />
 
       <img
         src="/logos/logo5.png"
         alt="Logo 5"
-        className="h-24 md:h-32 opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+        className="h-32 md:h-44 w-auto object-contain opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
       />
 
       <img
         src="/logos/logo6.png"
         alt="Logo 6"
-        className="h-24 md:h-32 opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+        className="h-32 md:h-44 w-auto object-contain opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
       />
 
       <img
         src="/logos/logo7.png"
         alt="Logo 7"
-        className="h-24 md:h-32 opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+        className="h-32 md:h-44 w-auto object-contain opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
       />
 
       {/* Duplicados para loop infinito */}
@@ -1063,43 +1063,43 @@ transition={{
       <img
         src="/logos/logo1.png"
         alt="Logo 1"
-        className="h-24 md:h-32 opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+        className="h-32 md:h-44 w-auto object-contain opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
       />
 
       <img
         src="/logos/logo2.png"
         alt="Logo 2"
-        className="h-24 md:h-32 opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+        className="h-32 md:h-44 w-auto object-contain opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
       />
 
       <img
         src="/logos/logo3.png"
         alt="Logo 3"
-        className="h-24 md:h-32 opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+        className="h-32 md:h-44 w-auto object-contain opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
       />
 
       <img
         src="/logos/logo4.png"
         alt="Logo 4"
-        className="h-24 md:h-32 opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+        className="h-32 md:h-44 w-auto object-contain opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
       />
 
       <img
         src="/logos/logo5.png"
         alt="Logo 5"
-        className="h-24 md:h-32 opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+        className="h-32 md:h-44 w-auto object-contain opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
       />
 
       <img
         src="/logos/logo6.png"
         alt="Logo 6"
-        className="h-24 md:h-32 opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+        className="h-32 md:h-44 w-auto object-contain opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
       />
 
       <img
         src="/logos/logo7.png"
         alt="Logo 7"
-        className="h-24 md:h-32 opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+        className="h-32 md:h-44 w-auto object-contain opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
       />
 
     </div>
