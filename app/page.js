@@ -45,6 +45,8 @@ const [errorServicio, setErrorServicio] = useState(false);
 const [errorDescripcion, setErrorDescripcion] = useState(false);
 
 useEffect(() => {
+  if (window.innerWidth < 768) return;
+
   const handleMouseMove = (e) => {
     setMousePosition({
       x: e.clientX,
@@ -272,7 +274,7 @@ Quiero recibir una propuesta para mi proyecto.`;
       </a>
 
       {/* HERO */}
-<section className="relative h-screen overflow-hidden">
+<section className="relative min-h-screen overflow-hidden">
 
   {/* Imagen Hero Completa */}
   <motion.img
@@ -303,7 +305,7 @@ Quiero recibir una propuesta para mi proyecto.`;
     delay: 0.8,
     ease: "easeOut",
   }}
-  className="absolute top-[32%] right-[8%] z-50 flex gap-4"
+  className="absolute bottom-32 left-6 right-6 md:top-[32%] md:left-auto md:right-[8%] md:bottom-auto z-50 flex flex-row justify-center md:justify-start gap-3"
 >
     {[
       ["120+", "PROYECTOS"],
@@ -322,12 +324,12 @@ transition={{
   stiffness: 300,
   damping: 18,
 }}
-  className="relative overflow-hidden backdrop-blur-xl bg-black/30 border border-lime-400/20 rounded-[24px] px-8 py-5 min-w-[160px] shadow-[0_0_50px_rgba(163,230,53,0.18)]"
+  className="relative overflow-hidden backdrop-blur-xl bg-black/30 border border-lime-400/20 rounded-[20px] px-4 py-3 md:px-8 md:py-5 min-w-[100px] md:min-w-[160px]"
 >
   <div className="absolute inset-0 bg-lime-400/5 blur-2xl" />
 
   <div className="relative">
-    <h3 className="text-5xl font-black text-lime-400">
+    <h3 className="text-2xl md:text-5xl font-black text-lime-400">
       {number}
     </h3>
 
@@ -349,17 +351,15 @@ transition={{
     duration: 0.9,
     ease: "easeOut",
   }}
-  className="absolute left-[8%] bottom-[10%] max-w-[620px]"
+  className="absolute left-[8%] bottom-[10%] max-w-[620px] md:max-w-[620px] max-w-[90%]"
 >
-      <p className="text-lime-400 uppercase tracking-[0.35em] text-[11px] mb-6">
-        DIRECCIÓN CREATIVA • BRANDING • VISUALIZACIÓN 3D
-      </p>
+      <p className="text-lime-400 uppercase tracking-[0.3em] text-xs md:text-sm font-medium mb-6">
+  DIRECCIÓN CREATIVA • BRANDING • VISUALIZACIÓN 3D
+</p>
 
-      <p className="text-white/85 text-xl leading-relaxed mb-10">
-        Soy Félix, Ingeniero en Telecomunicaciones y Director
-        Creativo especializado en branding, visualización
-        arquitectónica 3D y experiencias visuales de alto impacto.
-      </p>
+      <p className="text-white/85 text-lg sm:text-xl md:text-3xl leading-tight mb-10 font-light">
+  Transformo ideas en experiencias visuales que conectan, inspiran y generan confianza.
+</p>
 
       
 
@@ -375,7 +375,7 @@ transition={{
           }
           className="bg-lime-400 text-black px-8 py-4 rounded-full font-semibold hover:scale-105 transition"
         >
-          Explorar Proyectos
+          Ver Portafolio
         </button>
 
         <a
@@ -384,7 +384,7 @@ transition={{
   rel="noopener noreferrer"
   className="border border-white/10 backdrop-blur-xl bg-white/5 px-8 py-4 rounded-full uppercase tracking-[0.2em] text-sm hover:border-lime-400 transition-all"
 >
-          Trabajemos Juntos
+          Solicitar Cotización
         </a>
 
       </div>
@@ -459,7 +459,7 @@ transition={{
         </div>
 
         <div
-  className="grid md:grid-cols-5 gap-4"
+  className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4"
   style={{
     perspective: "1200px"
   }}
@@ -481,7 +481,7 @@ transition={{
   transition={{
     duration: 0.4
   }}
-  className="group relative overflow-hidden rounded-[30px] h-[520px] border border-white/10 shadow-[0_25px_60px_rgba(0,0,0,0.65)]"
+  className="group relative overflow-hidden rounded-[30px] h-[340px] md:h-[520px] border border-white/10 shadow-[0_25px_60px_rgba(0,0,0,0.65)]"
 >
   <img
   src={service.image}
@@ -507,7 +507,7 @@ transition={{
     {/* Icono */}
 
     {/* Texto oculto inicialmente */}
-    <div className="absolute bottom-50 left-0 right-0 px-6 opacity-0 translate-y-6 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500">
+    <div className="absolute bottom-8 md:bottom-40 left-0 right-0 px-6 opacity-100 translate-y-0 transition-all duration-500 md:opacity-0 md:translate-y-6 md:group-hover:opacity-100 md:group-hover:translate-y-0 transition-all duration-500">
       <h3 className="text-black font-black text-xl mb-3">
         {service.title}
       </h3>
@@ -557,19 +557,31 @@ transition={{
                 Sobre mí
               </p>
 
-              <h2 className="text-5xl md:text-7xl xl:text-[60px] font-black leading-[0.95] tracking-[-0.04em] mb-8">
+              <h2 className="text-4xl md:text-7xl xl:text-[60px] font-black leading-[0.95] tracking-[-0.04em] mb-8">
                 Creatividad que une
                 <span className="text-lime-400 block">
-                  EMOCIÓN
+                  ESTRATEGIA
                 </span>
-                y estrategia visual.
+                y emosión visual.
               </h2>
 
-              <p className="text-white/65 text-lg md:text-xl leading-relaxed max-w-3xl mb-12">
-                Cada proyecto comienza con una idea y una intención clara: comunicar de forma efectiva y crear experiencias visuales con significado.
-                Trabajo desde una visión donde la creatividad, la estrategia y la atención al detalle convergen para construir propuestas visuales sólidas, coherentes y memorables.
-                Mi objetivo no es solo crear algo atractivo, sino desarrollar soluciones que transmitan identidad, generen confianza y establezcan conexiones auténticas con las personas.
-              </p>
+              <div className="text-white/65 text-base md:text-xl leading-8 max-w-3xl mb-12 space-y-6">
+  <p>
+    Soy Félix, Ingeniero en Telecomunicaciones y Director Creativo especializado en branding, visualización arquitectónica 3D y producción audiovisual.
+  </p>
+
+  <p>
+    Mi enfoque combina estrategia, tecnología y diseño para desarrollar marcas, espacios y experiencias visuales que conectan con las personas y generan impacto.
+  </p>
+
+  <p>
+    Cada proyecto comienza con una idea y una intención clara: comunicar de forma efectiva y crear experiencias visuales con significado. Trabajo desde una visión donde la creatividad, la estrategia y la atención al detalle convergen para construir propuestas visuales sólidas, coherentes y memorables.
+  </p>
+
+  <p>
+    Mi objetivo no es solo crear algo atractivo, sino desarrollar soluciones que transmitan identidad, generen confianza y establezcan conexiones auténticas con las personas.
+  </p>
+</div>
 
               <div className="flex flex-wrap gap-4 mb-14">
 
@@ -670,7 +682,7 @@ transition={{
           duration: 0.25,
         },
       }}
-      className="group relative overflow-hidden rounded-[42px] min-h-[620px] border border-white/10 hover:border-lime-400/50 hover:shadow-[0_0_80px_rgba(163,230,53,0.22)] transition-all duration-500"
+      className="group relative overflow-hidden rounded-[42px] min-h-[380px] md:min-h-[620px] border border-white/10 hover:border-lime-400/50 hover:shadow-[0_0_80px_rgba(163,230,53,0.22)] transition-all duration-500"
     >
 
   <img
@@ -696,13 +708,13 @@ transition={{
 
   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
 
-  <div className="relative z-10 h-full flex flex-col justify-end p-10">
+  <div className="relative z-10 h-full flex flex-col justify-end p-6 md:p-10">
 
     <p className="text-lime-400 uppercase tracking-[0.3em] text-[11px] mb-4">
       {item.category}
     </p>
 
-    <h3 className="text-4xl md:text-5xl font-black mb-5">
+    <h3 className="text-2xl md:text-5xl font-black mb-5">
       {item.title}
     </h3>
 
@@ -865,7 +877,7 @@ transition={{
     Proceso
   </p>
 
-  <h2 className="text-4xl md:text-6xl font-black leading-tight max-w-4xl">
+  <h2 className="text-4xl md:text-5xl md:text-6xl font-black leading-tight max-w-4xl">
     De la idea a la 
     <span className="text-lime-400 block">
                   EXPERIENCIA VISUAL.
@@ -874,7 +886,7 @@ transition={{
 
 </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-5xl mx-auto">
 
           {[
   {
@@ -1007,43 +1019,43 @@ transition={{
       <img
         src="/logos/logo1.png"
         alt="Logo 1"
-        className="h-50 opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+        className="h-14 md:h-20 opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
       />
 
       <img
         src="/logos/logo2.png"
         alt="Logo 2"
-        className="h-50 opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+        className="h-14 md:h-20 opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
       />
 
       <img
         src="/logos/logo3.png"
         alt="Logo 3"
-        className="h-50 opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+        className="h-14 md:h-20 opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
       />
 
       <img
         src="/logos/logo4.png"
         alt="Logo 4"
-        className="h-50 opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+        className="h-14 md:h-20 opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
       />
 
       <img
         src="/logos/logo5.png"
         alt="Logo 5"
-        className="h-50 opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+        className="h-14 md:h-20 opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
       />
 
       <img
         src="/logos/logo6.png"
         alt="Logo 6"
-        className="h-50 opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+        className="h-14 md:h-20 opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
       />
 
       <img
         src="/logos/logo7.png"
         alt="Logo 7"
-        className="h-50 opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+        className="h-14 md:h-20 opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
       />
 
       {/* Duplicados para loop infinito */}
@@ -1051,43 +1063,43 @@ transition={{
       <img
         src="/logos/logo1.png"
         alt="Logo 1"
-        className="h-50 opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+        className="h-14 md:h-20 opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
       />
 
       <img
         src="/logos/logo2.png"
         alt="Logo 2"
-        className="h-50 opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+        className="h-14 md:h-20 opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
       />
 
       <img
         src="/logos/logo3.png"
         alt="Logo 3"
-        className="h-50 opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+        className="h-14 md:h-20 opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
       />
 
       <img
         src="/logos/logo4.png"
         alt="Logo 4"
-        className="h-50 opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+        className="h-14 md:h-20 opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
       />
 
       <img
         src="/logos/logo5.png"
         alt="Logo 5"
-        className="h-50 opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+        className="h-14 md:h-20 opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
       />
 
       <img
         src="/logos/logo6.png"
         alt="Logo 6"
-        className="h-50 opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+        className="h-14 md:h-20 opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
       />
 
       <img
         src="/logos/logo7.png"
         alt="Logo 7"
-        className="h-50 opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+        className="h-14 md:h-20 opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
       />
 
     </div>
@@ -1143,7 +1155,7 @@ transition={{
 
   <form
     onSubmit={handleLeadSubmit}
-    className="space-y-6 backdrop-blur-xl bg-white/5 border border-white/10 rounded-[40px] p-8 md:p-10"
+    className="space-y-6 backdrop-blur-xl bg-white/5 border border-white/10 rounded-[40px] p-6 md:p-10"
   >
 
     <input
@@ -1180,7 +1192,7 @@ transition={{
         ¿Qué servicio necesitas?
       </p>
 
-      <div className="grid md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
 
         {[
            {
@@ -1291,7 +1303,7 @@ transition={{
       {/* CTA */}
       <section className="max-w-7xl mx-auto px-6 pb-28 -translate-y-6">
 
-        <div className="relative overflow-hidden rounded-[48px] border border-white/10 min-h-[650px] flex items-center justify-center text-center hover:border-lime-400/50 hover:shadow-[0_0_80px_rgba(163,230,53,0.22)]">
+        <div className="relative overflow-hidden rounded-[48px] border border-white/10 min-h-[420px] md:min-h-[650px] flex items-center justify-center text-center hover:border-lime-400/50 hover:shadow-[0_0_80px_rgba(163,230,53,0.22)]">
 
   {/* Imagen */}
   <img
@@ -1312,7 +1324,7 @@ transition={{
   {/* Contenido */}
   <div className="relative z-10 max-w-xl mx-auto px-8">
 
-    <h2 className="text-4xl md:text-5xl xl:text-6xl font-black leading-tight mb-12">
+    <h2 className="text-3xl md:text-5xl xl:text-6xl font-black leading-tight mb-12">
       ¿Listo para <span className="text-lime-400 block">
                 DESTACAR
               </span> visualmente?
