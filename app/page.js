@@ -305,7 +305,7 @@ Quiero recibir una propuesta para mi proyecto.`;
     delay: 0.8,
     ease: "easeOut",
   }}
-  className="absolute top-120 left-6 right-6 md:top-[32%] md:left-auto md:right-[8%] md:bottom-auto z-50 flex flex-row justify-center md:justify-start gap-3"
+  className="absolute top-90 left-6 right-6 md:top-[32%] md:left-auto md:right-[8%] md:bottom-auto z-50 flex flex-row justify-center md:justify-start gap-3"
 >
     {[
       ["120+", "PROYECTOS"],
