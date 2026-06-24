@@ -1,10 +1,13 @@
 import "./globals.css";
 import LenisProvider from "./providers/LenisProvider";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata = {
   metadataBase: new URL("https://fexdesign-portfolio.vercel.app"),
-  
-  title: "FEXDESIGN | Branding, Diseño Gráfico, Visualización 3D y Producción Audiovisual",
+
+  title:
+    "FEXDESIGN | Branding, Diseño Gráfico, Visualización 3D y Producción Audiovisual",
+
   description:
     "Estudio creativo especializado en branding, visualización arquitectónica 3D, diseño publicitario y producción audiovisual. Solicita tu cotización.",
 
@@ -22,8 +25,10 @@ export default function RootLayout({ children }) {
     <html lang="es">
       <body className="bg-black text-white">
         <LenisProvider>
-        {children}
+          {children}
         </LenisProvider>
+
+        <Analytics />
       </body>
     </html>
   );
