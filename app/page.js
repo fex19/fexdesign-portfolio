@@ -305,7 +305,7 @@ Quiero recibir una propuesta para mi proyecto.`;
     delay: 0.8,
     ease: "easeOut",
   }}
-  className="absolute bottom-56 left-6 right-6 md:top-[32%] md:left-auto md:right-[8%] md:bottom-auto z-50 flex flex-row justify-center md:justify-start gap-3"
+  className="absolute top-24 left-6 right-6 md:top-[32%] md:left-auto md:right-[8%] md:bottom-auto z-50 flex flex-row justify-center md:justify-start gap-3"
 >
     {[
       ["120+", "PROYECTOS"],
@@ -378,14 +378,18 @@ transition={{
           Ver Portafolio
         </button>
 
-        <a
-  href="https://wa.me/584144058207"
-  target="_blank"
-  rel="noopener noreferrer"
+        <button
+  onClick={() =>
+    document
+      .getElementById("contacto")
+      ?.scrollIntoView({
+        behavior: "smooth",
+      })
+  }
   className="border border-white/10 backdrop-blur-xl bg-white/5 px-8 py-4 rounded-full uppercase tracking-[0.2em] text-sm hover:border-lime-400 transition-all"
 >
-          Solicitar Cotización
-        </a>
+  Solicitar Cotización
+</button>
 
       </div>
       </motion.div>
@@ -1114,7 +1118,10 @@ transition={{
 </motion.section>
       {/* FORMULARIO LEADS */}
 
-<section className="relative overflow-hidden py-32">
+<section
+  id="contacto"
+  className="relative overflow-hidden py-32"
+>
 
   {/* Imagen de fondo */}
   <div className="absolute inset-0 pointer-events-none">
