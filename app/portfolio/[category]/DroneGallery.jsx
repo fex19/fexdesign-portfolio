@@ -10,10 +10,10 @@ const videos = [
   vimeoId: '123456789',
 },  
     {
-  title: 'Complejo Industrial',
+  title: 'Cobertura Deportiva',
   location: 'Puerto Cabello, Venezuela',
   thumbnail: '/drone/thumb-2.jpg',
-  vimeoId: '123456790',
+  vimeoId: '1209310271',
 },
 {
   title: 'Proyecto Inmobiliario',
@@ -37,7 +37,7 @@ const videos = [
   title: 'Proyecto Comercial',
   location: 'Caracas, Venezuela',
   thumbnail: '/drone/thumb-6.jpg',
-  vimeoId: '123456789',
+  vimeoId: '1209313059',
 },
 ];
 
