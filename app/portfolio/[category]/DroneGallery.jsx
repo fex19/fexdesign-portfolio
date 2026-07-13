@@ -54,12 +54,12 @@ export default function DroneGallery() {
       <div className="overflow-hidden rounded-[32px] border border-white/10 shadow-[0_0_80px_rgba(163,230,53,0.12)]">
 
         <iframe
-          src="https://player.vimeo.com/video/1209371729"
-          className="w-full aspect-video"
-          allow="autoplay; fullscreen"
-          allowFullScreen
-          title="Video Principal"
-        />
+  src="https://player.vimeo.com/video/1209371729?autoplay=1&muted=1&loop=1&autopause=0&background=1"
+  className="w-full aspect-video"
+  allow="autoplay; fullscreen; picture-in-picture"
+  allowFullScreen
+  title="Video Principal"
+/>
 
       </div>
 
