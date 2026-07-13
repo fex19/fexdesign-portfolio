@@ -28,10 +28,10 @@ const videos = [
   vimeoId: '123456792',
 },,
   {
-  title: 'Proyecto Arquitectónico',
-  location: 'Caracas, Venezuela',
+  title: 'Proyecto Turistico',
+  location: 'Puerto Cabello, Venezuela',
   thumbnail: '/drone/thumb-5.jpg',
-  vimeoId: '123456789',
+  vimeoId: '1209354255',
 },
   {
   title: 'Proyecto Comercial',
@@ -54,7 +54,7 @@ export default function DroneGallery() {
       <div className="overflow-hidden rounded-[32px] border border-white/10 shadow-[0_0_80px_rgba(163,230,53,0.12)]">
 
         <iframe
-          src="https://player.vimeo.com/video/TU_VIDEO_PRINCIPAL"
+          src="https://vimeo.com/manage/videos/1209371729"
           className="w-full aspect-video"
           allow="autoplay; fullscreen"
           allowFullScreen

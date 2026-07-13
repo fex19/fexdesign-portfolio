@@ -1062,6 +1062,84 @@ transition={{
         className="h-32 md:h-44 w-auto object-contain opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
       />
 
+      <img
+        src="/logos/logo8.png"
+        alt="Logo 8"
+        className="h-32 md:h-44 w-auto object-contain opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+      />
+
+      <img
+        src="/logos/logo9.png"
+        alt="Logo 9"
+        className="h-32 md:h-44 w-auto object-contain opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+      />
+
+<img
+        src="/logos/logo10.png"
+        alt="Logo 10"
+        className="h-32 md:h-44 w-auto object-contain opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+      />
+
+      <img
+        src="/logos/logo11.png"
+        alt="Logo 8"
+        className="h-32 md:h-44 w-auto object-contain opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+      />
+
+      <img
+        src="/logos/logo12.png"
+        alt="Logo 12"
+        className="h-32 md:h-44 w-auto object-contain opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+      />
+
+      <img
+        src="/logos/logo13.png"
+        alt="Logo 13"
+        className="h-32 md:h-44 w-auto object-contain opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+      />
+
+<img
+        src="/logos/logo14.png"
+        alt="Logo 14"
+        className="h-32 md:h-44 w-auto object-contain opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+      />
+
+<img
+        src="/logos/logo15.png"
+        alt="Logo 15"
+        className="h-32 md:h-44 w-auto object-contain opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+      />
+
+      <img
+        src="/logos/logo16.png"
+        alt="Logo 16"
+        className="h-32 md:h-44 w-auto object-contain opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+      />
+
+      <img
+        src="/logos/logo17.png"
+        alt="Logo 17"
+        className="h-32 md:h-44 w-auto object-contain opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+      />
+
+<img
+        src="/logos/logo18.png"
+        alt="Logo 18"
+        className="h-32 md:h-44 w-auto object-contain opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+      />
+
+      <img
+        src="/logos/logo19.png"
+        alt="Logo 19"
+        className="h-32 md:h-44 w-auto object-contain opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+      />
+
+      <img
+        src="/logos/logo20.png"
+        alt="Logo 20"
+        className="h-32 md:h-44 w-auto object-contain opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+      />
+      
       {/* Duplicados para loop infinito */}
 
       <img
@@ -1103,6 +1181,84 @@ transition={{
       <img
         src="/logos/logo7.png"
         alt="Logo 7"
+        className="h-32 md:h-44 w-auto object-contain opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+      />
+
+      <img
+        src="/logos/logo8.png"
+        alt="Logo 8"
+        className="h-32 md:h-44 w-auto object-contain opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+      />
+
+      <img
+        src="/logos/logo9.png"
+        alt="Logo 9"
+        className="h-32 md:h-44 w-auto object-contain opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+      />
+
+<img
+        src="/logos/logo10.png"
+        alt="Logo 10"
+        className="h-32 md:h-44 w-auto object-contain opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+      />
+
+      <img
+        src="/logos/logo11.png"
+        alt="Logo 8"
+        className="h-32 md:h-44 w-auto object-contain opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+      />
+
+      <img
+        src="/logos/logo12.png"
+        alt="Logo 12"
+        className="h-32 md:h-44 w-auto object-contain opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+      />
+
+      <img
+        src="/logos/logo13.png"
+        alt="Logo 13"
+        className="h-32 md:h-44 w-auto object-contain opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+      />
+
+<img
+        src="/logos/logo14.png"
+        alt="Logo 14"
+        className="h-32 md:h-44 w-auto object-contain opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+      />
+
+<img
+        src="/logos/logo15.png"
+        alt="Logo 15"
+        className="h-32 md:h-44 w-auto object-contain opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+      />
+
+      <img
+        src="/logos/logo16.png"
+        alt="Logo 16"
+        className="h-32 md:h-44 w-auto object-contain opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+      />
+
+      <img
+        src="/logos/logo17.png"
+        alt="Logo 17"
+        className="h-32 md:h-44 w-auto object-contain opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+      />
+
+<img
+        src="/logos/logo18.png"
+        alt="Logo 18"
+        className="h-32 md:h-44 w-auto object-contain opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+      />
+
+      <img
+        src="/logos/logo19.png"
+        alt="Logo 19"
+        className="h-32 md:h-44 w-auto object-contain opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+      />
+
+      <img
+        src="/logos/logo20.png"
+        alt="Logo 20"
         className="h-32 md:h-44 w-auto object-contain opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
       />
 
