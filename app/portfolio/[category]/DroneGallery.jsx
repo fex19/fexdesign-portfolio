@@ -5,9 +5,9 @@ import { useState } from 'react';
 const videos = [
 {
   title: 'Inspección Industrial',
-  location: 'Caracas, Venezuela',
+  location: 'Valencia, Venezuela',
   thumbnail: '/drone/thumb-1.jpg',
-  vimeoId: '123456789',
+  vimeoId: '1209652776',
 },  
     {
   title: 'Cobertura Deportiva',
@@ -19,7 +19,7 @@ const videos = [
   title: 'Proyecto Inmobiliario',
   location: 'Valencia, Venezuela',
   thumbnail: '/drone/thumb-3.jpg',
-  vimeoId: '123456791',
+  vimeoId: '1209648681',
 },
 {
   title: 'Cobertura Corporativa',
